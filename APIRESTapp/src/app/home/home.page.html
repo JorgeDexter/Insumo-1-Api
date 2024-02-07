@@ -1,0 +1,82 @@
+
+
+  <ion-content>
+
+    <ion-item>
+      <ion-label>ID</ion-label>
+      <ion-input type="number" [(ngModel)]="pokemonID"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="getPokemonId()">
+      <ion-icon name="search"></ion-icon>
+    </ion-button>
+
+    <ion-card *ngIf="pokemonID">
+
+      <ion-card-header>
+        <ion-card-title>{{pokemon.name}}</ion-card-title>
+      </ion-card-header>
+
+      <img [src]="pokemon.sprites.front_default">
+
+    </ion-card>
+
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input type="number" [(ngModel)]="ppokemonName"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="getPokemonName()">
+      <ion-icon name="search"></ion-icon>
+    </ion-button>
+
+    <ion-card *ngIf="pokemonName">
+
+      <ion-card-header>
+        <ion-card-title>{{pokemon.id}}</ion-card-title>
+      </ion-card-header>
+
+      <img [src]="pokemon.sprites.front_default">
+
+    </ion-card>
+
+    <ion-item>
+      <ion-label>ID</ion-label>
+      <ion-input type="number" [(ngModel)]="PokemonObjectID">
+    </ion-item>
+
+    <ion-button (click)="getPokemonObjectID()">
+      <ion-icon name="search"></ion-icon>
+    </ion-button>
+
+    <ion-card *ngIf="PokemonObjectID">
+
+      <ion-card-header>
+        <ion-card-title>{{pokemon.name}}</ion-card-title>
+      </ion-card-header>
+
+      <img [src]="pokemon.sprites.front_default">
+
+    </ion-card>
+
+
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input type="number" [(ngModel)]="PokemoObjectName"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="getPokemoObjectName()">
+      <ion-icon name="search"></ion-icon>
+    </ion-button>
+
+    <ion-card *ngIf="PokemoObjectName">
+
+      <ion-card-header>
+        <ion-card-title>{{pokemon.id}}</ion-card-title>
+      </ion-card-header>
+
+      <img [src]="pokemon.sprites.front_default">
+
+    </ion-card>
+
+  </ion-content>
